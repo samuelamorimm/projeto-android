@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype')
+    ;
+    font-weight: normal;
+}
+
+:root {
+--cor1: #c5ebd6;
+--cor2: #83e1ad;
+--cor3: #3ddc84;
+--cor4: #2fa866;
+--cor5: #1a5c37;
+
+
+--fonte-padrão: Arial, Helvetica, Verdana, sans-serif;
+--fonte-destaque: "Bebas Neue", 'cursive';
+--fonte-android: 'Android', 'cursive';
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrão);
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: var(--cor5);
+    font-weight: 800;
+}
+
+main  a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #1a5c37;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+a.external::after {
+    content: '\00A0\1F517';
+}
+
+main a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+
+
+
+header {
+
+background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+background-color: var(--cor4);
+height: 150px;
+text-align: center;
+padding: 40px;
+text-shadow: 0px 0px 10px black;
+}
+
+header > p {
+    font-family: var(--fonte-padrão);
+    color: white;
+    max-width: 500px;
+    font-size: 1.2em;
+    margin: auto;
+}
+
+header > h1 {
+    padding-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: 500;
+
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 13px;
+    box-shadow: rgba(0, 0, 0, 0.329) 0px 8px 7px 0px;
+    margin-bottom: 1px;
+
+}
+
+nav > a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+nav > a:hover {
+   color: var(--cor5);
+    background-color: var(--cor3);
+    transition-duration: 0.8s;
+    
+}
+
+main {
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    min-width: 320px;
+    max-width: 1000px;
+    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    margin: 20px -20px 20px -20px;
+    padding: 20px;
+    padding-bottom: 56.7%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main h1 {
+    font-family: var(--fonte-android);
+    font-size: 1.8em;
+    
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, var(--cor3), transparent);
+    padding: 3px 6px;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.541);
+    border-radius: 6px;
+
+}
+
+aside > ul:hover {
+    font-size: 16.8px;
+    padding: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.541);
+    border-radius: 6px;
+    transition-duration: 0.8s;
+    background-color: #d7ebe0;
+}
+
+aside h3 {
+    background-color: var(--cor5);
+    font-size: 1em;
+    color: white;
+    margin: -10px -10px 0px -10px;
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+
+}
+
+footer {
+    font-weight: 100;
+    background-color: var(--cor5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
+footer a:hover {
+    background-color: var(--cor2);
+    color: var(--cor5);
+    padding: 2px ;
+    border-radius: 2px;
+    transition-duration: 0.3s;
+    text-decoration: underline;
+
+}
